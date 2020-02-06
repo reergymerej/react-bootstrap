@@ -1,0 +1,15 @@
+@import '../styles/_theme.scss';
+
+$space: 0.3em;
+
+.root {
+  display: flex;
+  justify-content: space-between;
+  padding: $space;
+  color: $secondary;
+}
+
+.buttons {
+  display: inline-block;
+  margin-left: $space;
+}

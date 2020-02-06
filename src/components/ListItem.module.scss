@@ -1,0 +1,16 @@
+.stats {
+  display: flex;
+
+  span:after {
+    $size: 7px;
+    font-family: "Font Awesome 5 Free";
+    content: '\f0c8';
+    font-size: $size;
+    margin: $size;
+    vertical-align: middle;
+  }
+
+  span:last-child:after {
+    content: '';
+  }
+}

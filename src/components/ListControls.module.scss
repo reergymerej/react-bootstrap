@@ -1,0 +1,23 @@
+@import '../styles/_theme.scss';
+
+$padding: 1em;
+
+.root {
+  border-bottom: $border;
+  padding-top: 1.5em;
+  > div {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.input {
+  padding: $padding;
+  width: 300px;
+  font-weight: bold;
+  border: $border;
+}
+
+.select {
+  width: 150px;
+}

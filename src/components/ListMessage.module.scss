@@ -1,0 +1,44 @@
+@import '../styles/_theme.scss';
+
+.root {
+  display: flex;
+  padding: 1.5em;
+  &:nth-child(even) {
+    background-color: $primary;
+  }
+}
+
+.icon {
+  font-size: $bigfont;
+}
+
+.content {
+  flex: 1;
+  margin-left: 1.5em;
+}
+
+.message {
+  font-size: $bigfont;
+  line-height: 1em;
+  margin-bottom: 0.3em;
+}
+
+.submessage {
+  @extend %boldfont;
+}
+
+:global {
+  .fa-spinner {
+    animation: spin infinite 3s linear;
+  }
+
+  @keyframes:global(spin) {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+}
+
